@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Logica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="jsLogic.svg">
+</head>
+
+<body>
+    <h1 class="d-flex justify-content-center mt-4">Ejercicios de logica</h1>
+    <section class="container mt-4">
+        <div>
+            <ul>
+                <li>Se necesitan sumar los números del 1 a n, donde n es un número que le pedimos al usuario.</li>
+            </ul>
+            <div>
+                <input type="number" id="sumaEjercicio1">
+                <button onclick="sumaN()" class="btn bg-dark text-white">Verificar</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-4">
+        <div>
+            <ul>
+                <li>Se necesita validar si un número ingresado por el usuario es par o impar.</li>
+            </ul>
+            <input type="number" id="numeroEjercicio2">
+            <button onclick="verificarNumero()" class="btn bg-dark text-white">Verificar</button>
+        </div>
+    </section>
+
+    <section class="container mt-4">
+        <div>
+            <ul>
+                <li>
+                    La pizzería Pepitos requiere un algoritmo que permita informarle a los usuarios si reciben o no un
+                    premio por parte del negocio, se tienen las siguientes validaciones:
+                    <ol class="mt-3">
+                        <li>
+                            Si es un niño menor a 10 años, debe ir a reclamar un jugo.
+                        </li>
+                        <li>
+                            Si es una persona mayor de edad (18 años) debe ir a reclamar una cerveza.
+                        </li>
+                        <li>
+                            Y si es una mujer, debe reclamar adicionalmente una porción de pizza Hawaiana.
+                        </li>
+                        <li>
+                            O si es un hombre debe reclamar adicionalmente una porción de pizza tres carnes.
+                        </li>
+                        <li>
+                            Si no cumple ninguna de las condiciones, se le debe informar que desafortunadamente, no
+                            recibe ningún premio
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <input id="iEdad" type="number" placeholder="¿Cual es tu edad?">
+            <input id="iGenero" type="text" placeholder="¿Eres niña o niño || Mujer o Hombre?">
+            <button onclick="btnEjercicio3()" class="btn bg-dark text-white">Verificar</button>
+        </div>
+    </section>
+    <section class="container mt-4">
+        <div>
+            <ul>
+                <li>
+                    Se necesita crear un menú de opciones, donde la persona escriba que quiere de comer, se le vaya
+                    sumando el valor a lo seleccionado hasta que el usuario escriba pagar, Una vez termine de comprar,
+                    se le debe mostrar el valor que debe pagar.
+                </li>
+            </ul>
+        </div>
+        <h3>Menú</h3>
+        <ul>
+            <li><strong>Hamburguesa:</strong> $20.000</li>
+            <li><strong>Pizza:</strong> $9.000</li>
+            <li><strong>Papas Fritas:</strong> $4.000</li>
+            <li><strong>Gaseosa:</strong> $2.500</li>
+        </ul>
+        <div>¿Que deseas?</div>
+        <input type="text" id="iOrden">
+        <button type="submit" id="agregarItem" class="btn bg-dark text-white">Añadir al carrito</button>
+        <button type="submit" id="totalPagar" class="btn bg-dark text-white">Total</button>
+        <div id="tuCarritoText"><i class="fs-4 fa-solid fa-cart-shopping"></i></div>
+    </section>
+    <section class="container mt-4">
+        <div>
+            <ul>
+                <li>
+                    Se le debe pedir al usuario un número y mostrar la tabla de multiplicar de ese número,
+                    adicionalmente, se debe mostrar el total de las multiplicaciones.
+                </li>
+            </ul>
+        </div>
+        <div>Ingresa un número para generar la tabla de multiplicar:</div>
+        <div class="pt-2">
+            <input type="number" id="numeroInput">
+            <button class="btn bg-dark text-white" id="calcularBtn">Calcular</button>
+        </div>
+        <div id="tablaDiv"></div>
+        <p id="totalEjercicio5"></p>
+    </section>
+    <section class="container mt-4">
+        <ul>
+            <li>
+                Validar cual es el valor de matrícula (1’000.000) que debe pagar un estudiante, teniendo en cuenta que:
+            </li>
+            <ol>
+                <li>
+                    Si el promedio fue menor a 3 no se le descuenta nada.
+                </li>
+                <li>
+                    Cuando el promedio sea entre 3 y 4 se le descuenta el 5%
+                </li>
+                <li>
+                    Cuando el promedio sea mayor que 4, se le descuenta 50%
+                </li>
+            </ol>
+        </ul>
+        <h4>Valor Matricula</h4>
+        <input type="number" id="iEjercicio6">
+        <button class="btn bg-dark text-white" id="iValidar">Validar</button>
+    </section>
+    <pre class="footer">
+        .
+        .
+        .
+        .
+        .
+        .
+    </pre>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

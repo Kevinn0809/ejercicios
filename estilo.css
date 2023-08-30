@@ -1,0 +1,25 @@
+#iEdad {
+  width: 9.1rem;
+}
+#iGenero {
+  width: 17rem;
+}
+
+.tablaEjercicio5,
+td,
+th {
+  border: 1px solid;
+  padding: 5px;
+}
+
+.numeroI {
+  color: #c90d0d;
+}
+
+.resultadoTd {
+  color: #0edf0e;
+}
+
+.footer {
+  visibility: hidden;
+}
