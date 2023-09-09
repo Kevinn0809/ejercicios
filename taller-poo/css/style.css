@@ -31,3 +31,8 @@ body::-webkit-scrollbar-thumb {
     border: none;
     border-radius: 20px;
 }
+
+.size {
+    font-size: 19px;
+
+}
