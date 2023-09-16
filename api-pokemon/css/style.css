@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,500;0,8..144,700;0,8..144,800;1,8..144,100;1,8..144,600;1,8..144,800&display=swap');
+
+* {
+    font-family: 'Roboto Serif', serif;
+}
+
+#previous {
+    margin-right: 10px;
+}
+
+#btnBuscar {
+    width: 282px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.Titulo {
+    font-family: 'Fuggles', cursive;
+    font-size: 90px;
+    color: black;
+}
